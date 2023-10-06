@@ -1,4 +1,5 @@
 import { HeaderScotiaWealth } from "../../components/HeaderScotiaWealth/HeaderScotiaWealth";
+import { RecentActivity } from "../../components/RecentActivity/RecentActivity";
 import { SelectionCard } from "../../components/SelectionCard/SelectionCard";
 
 const ScotiaWealth = () => {
@@ -6,6 +7,7 @@ const ScotiaWealth = () => {
       <>
         <HeaderScotiaWealth />
         <SelectionCard />
+        <RecentActivity/>
       </>
     );
   };
