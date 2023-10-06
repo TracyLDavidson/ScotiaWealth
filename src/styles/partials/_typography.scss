@@ -1,19 +1,28 @@
-// font source: https://fonts.google.com/specimen/Titillium+Web (bold, semi-bold, regular)
-
 @font-face {
-  font-family: "regular";
-  src: url("./../../assets/fonts/regular.ttf") format("truetype");
+  font-family: "primary-regular";
+  src: url("./../../assets/fonts/frutiger/regular.ttf") format("truetype");
   font-weight: 400;
 }
 
 @font-face {
-  font-family: "bold";
-  src: url("./../../assets/fonts/bold.ttf") format("truetype");
-  font-weight: 600;
+  font-family: "primary-bold";
+  src: url("./../../assets/fonts/frutiger/bold.ttf") format("truetype");
+  font-weight: 700;
 }
 
 @font-face {
-  font-family: "semi-bold";
-  src: url("./../../assets/fonts/semi-bold.ttf") format("truetype");
+  font-family: "secondary-italic";
+  src: url("./../../assets/fonts/itc-charter/italic.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "secondary-bold-italic";
+  src: url("./../../assets/fonts/itc-charter/bold-italic.ttf")
+    format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "secondary-regular";
+  src: url("./../../assets/fonts/itc-charter/regular.ttf") format("truetype");
   font-weight: 400;
 }
