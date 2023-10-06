@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { Logo } from "./components/Logo/Logo";
+import { HeaderScotiaWealth } from "./components/HeaderScotiaWealth/HeaderScotiaWealth";
 import { Home } from "./pages/Home/Home";
 import { Dashboard } from "./pages/Dashboard/Dashboard";
 import "./styles/partials/_global.scss";
