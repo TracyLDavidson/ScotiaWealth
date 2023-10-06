@@ -1,16 +1,13 @@
-// colors
-$primary-color--dark: #ff0000;
-$primary-color--light: #fff;
-$primary-color--tertiary: #8240df;
+// Color Variables
+$clr-primary-scotiabank-red: #d81e05; // Primary Buttons or any Brand Related Elements
+$clr-neut-darker-gray: #333; // Body Text and Form Fields Text
+$clr-neut-dark-gray: #555; // Form Fields Border and Form Labels
+$clr-neut-gray: #777; // General Borders and Placeholder Text
+$clr-neut-light-gray: #d0d0d0; // Disabled Elements and Dividers
 
-$secondary-color--dark: #5c667e;
-$secondary-color--light: #bdc5d5;
+// Shadow Variable
+$box-shadow: 0px -4px 4px rgba(137, 137, 137, 0.25);
 
-$background-color--dark: #232940;
-$background-color--light: #f7f8f9;
-$background-color--white: #fff;
-$background-color--highlight-1: #d4edda;
-$background-color--highlight-2: #fbf1ee;
-
-$highlight-color--1: #158463;
-$highlight-color--2: #c94515;
+// Font Variables
+$font-stack-primary: Urbanist, sans-serif;
+$font-stack-secondary: SF-Pro-Text-Regular, sans-serif;

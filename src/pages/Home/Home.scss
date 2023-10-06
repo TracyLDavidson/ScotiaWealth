@@ -1,0 +1,17 @@
+@import "../../styles/partials/mixins";
+
+.home {
+  margin-top: 50px;
+  @include container;
+
+  &__card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__button-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}

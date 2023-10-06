@@ -1,0 +1,18 @@
+@import "../../../styles/partials/variables";
+@import "../../../styles/partials/mixins";
+
+.button-underlined {
+  @include LabelsLinksAndButtons;
+  display: inline-block;
+  text-align: center;
+  color: $secondary-color--dark;
+  margin: 8px;
+  padding: 0 12px;
+  padding-bottom: 8px;
+  border-bottom: 3px solid $secondary-color--dark;
+}
+
+.button-underlined--highlight {
+  color: $highlight-color--2;
+  border-bottom: 3px solid $highlight-color--2;
+}
