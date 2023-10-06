@@ -34,18 +34,23 @@ const Chat = () => {
           inbox.
         </p>
       </section>
-      <footer>
-        <div className="chat__screen">
-          <input type="text" name="message" />
-          <button className="chat__button-kyb">
+      <section className="message-panel">
+        <div className="message-panel__field-wrapper">
+          <input
+            className="message-panel__field"
+            type="text"
+            name="message"
+            placeholder="Chat with a person"
+          />
+          <button className="message-panel__button-kyb">
             <img
-              className="chat__kyb"
+              className="message-panel__kyb"
               src={keyboardUpIcon}
               alt="Show Keyboard"
             />
           </button>
         </div>
-      </footer>
+      </section>
     </>
   );
 };
