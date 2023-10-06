@@ -1,28 +1,12 @@
-@font-face {
-  font-family: "primary-regular";
-  src: url("./../../assets/fonts/frutiger/regular.ttf") format("truetype");
-  font-weight: 400;
-}
+// Import Google Font
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
+// Import SF-Pro Text
 @font-face {
-  font-family: "primary-bold";
-  src: url("./../../assets/fonts/frutiger/bold.ttf") format("truetype");
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: "secondary-italic";
-  src: url("./../../assets/fonts/itc-charter/italic.ttf") format("truetype");
-  font-weight: 400;
-}
-@font-face {
-  font-family: "secondary-bold-italic";
-  src: url("./../../assets/fonts/itc-charter/bold-italic.ttf")
-    format("truetype");
-  font-weight: 700;
-}
-@font-face {
-  font-family: "secondary-regular";
-  src: url("./../../assets/fonts/itc-charter/regular.ttf") format("truetype");
+  font-family: SF-Pro-Text-Regular;
+  src: url(../../assets/fonts/sf-pro-text/SF-Pro-Text-Regular.otf)
+      format("opentype"),
+    url(../../assets/fonts/alternative-files/AvenirNextLTProBold.ttf)
+      format("truetype");
   font-weight: 400;
 }
