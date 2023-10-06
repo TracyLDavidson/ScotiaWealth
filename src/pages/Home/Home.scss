@@ -1,7 +1,10 @@
 @import "../../styles/partials/mixins";
+@import "../../styles/partials/variables";
 
 .home {
   margin-top: 50px;
+  font-family: Urbanist;
+
   @include container;
 
   .button-underlined {
@@ -26,6 +29,12 @@
       justify-content: space-between;
       align-items: center;
       gap: 20px;
+
+      p {
+        font-size: 16px;
+        color: $secondary-color--dark;
+        font-weight: bold;
+      }
 
       .scotia-wealth-banner {
         transform: scale(0.7);
