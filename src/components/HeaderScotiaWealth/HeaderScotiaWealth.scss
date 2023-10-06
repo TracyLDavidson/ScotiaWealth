@@ -1,0 +1,50 @@
+@use "../../styles/partials/variables" as *;
+
+.headerScotiaWealth {
+  background-color: $primary-color--dark;
+  height: 247px;
+  width: 100%;
+  padding: 0px 19px 0px;
+  display: flex;
+  flex-direction: column;
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-back {
+      background-image: url("../../assets/images/icons/back-icon.svg");
+      background-size: cover;
+      background-position: center;
+      width: 9.844px;
+      height: 19.688px;
+      margin: 0px;
+      &-wrapper {
+        width: 40px;
+        cursor: pointer;
+      }
+    }
+    &-title {
+      text-align: center;
+      color: $background-color--white;
+      text-align: center;
+      font-family: Urbanist;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+    letter-spacing: -0.24px;
+    }
+    &-search {
+      background-image: url("../../assets/images/icons/search.svg");
+      background-size: cover;
+      background-position: center;
+      width: 20.001px;
+      height: 20px;
+    }
+  }
+  &__logo {
+    width: 65.901px;
+    height: 55px;
+    margin: auto;
+    margin-top: inherit;
+  }
+}
