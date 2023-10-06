@@ -28,14 +28,14 @@ navigate to your browser to localhost:5173
         <tr>
             <td>1<td>
             <td>Backdrop: Red Backdrop</td>
-            <td><Backdrop /></td>
+            <td>< Backdrop /></td>
             <td>N/A</td>
             <td>Not Assigned</td>
         </tr>
         <tr>
             <td>2<td>
             <td>Header</td>
-            <td><Header>{children}</Header></td>
+            <td>< Header >{children}</ Header ></td>
             <td>N/A</td>
             <td>Not Assigned</td>
         </tr>
@@ -48,8 +48,8 @@ navigate to your browser to localhost:5173
         </tr>
         <tr>
             <td>4<td>
-            <td>Title: Used in Header</td>
-            <td><Title>{text}</Title></td>
+            <td>Title: Used in Header (Home)</td>
+            <td>< Title >{text}</ Title ></td>
             <td>N/A</td>
             <td>Not Assigned</td>
         </tr>
