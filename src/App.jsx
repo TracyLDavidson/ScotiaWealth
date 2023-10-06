@@ -9,9 +9,9 @@ import "./styles/rsuite-custom-theme.less";
 function App() {
   return (
     <BrowserRouter>
-      <header>
+      {/* <header>
         <Logo variant="short" />
-      </header>
+      </header> */}
       <Routes>
         <Route path="/" element={<Navigate to="/home" />} />
         <Route path="/home" element={<Home />} />
