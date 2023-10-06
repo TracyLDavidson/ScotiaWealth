@@ -5,11 +5,22 @@ export const IconButton = ({
   iconUrl,
   variant = "default",
   onClick = () => {},
+  className = "",
 }) => {
   return (
-    <div className="icon-button" onClick={onClick}>
+    <div className={`icon-button ${className}`} onClick={onClick}>
       {variant === "small" && (
         <div className="icon-button__small">
+          <img src={iconUrl} />
+        </div>
+      )}
+      {variant === "xsmall" && (
+        <div className="icon-button__xsmall">
+          <img src={iconUrl} />
+        </div>
+      )}
+      {variant === "tiny" && (
+        <div className="icon-button__tiny">
           <img src={iconUrl} />
         </div>
       )}
@@ -20,6 +31,11 @@ export const IconButton = ({
       )}
       {variant === "default" && (
         <div className="icon-button__default">
+          <img src={iconUrl} />
+        </div>
+      )}
+      {variant === "xlarge" && (
+        <div className="icon-button__xlarge">
           <img src={iconUrl} />
         </div>
       )}

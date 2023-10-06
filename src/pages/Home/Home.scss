@@ -21,10 +21,19 @@
 
   &__navigational-item {
     .card__content {
+      height: 30px;
       display: flex;
-      justify-content: start;
+      justify-content: space-between;
       align-items: center;
       gap: 20px;
+
+      .scotia-wealth-banner {
+        transform: scale(0.7);
+      }
+
+      .icon-button:last-child {
+        flex: end;
+      }
     }
   }
   &__card {

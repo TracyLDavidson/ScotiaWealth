@@ -8,6 +8,9 @@ import { ButtonUnderlined } from "../../components/Buttons/ButtonUnderlined/Butt
 import { PurpleButton } from "../../components/Buttons/PurpleButton/PurpleButton";
 import { IconButton } from "../../components/Buttons/IconButton/IconButton";
 import creditCardIcon from "../../assets/images/icons/credit-card.png";
+import ScotiaWealthBanner from "../../assets/images/logo/scotia-wealth-banner.png";
+import rightChevronIcon from "../../assets/images/icons/right-chevron.svg";
+
 import tagIcon from "../../assets/images/icons/tag.png";
 
 export const Home = () => {
@@ -31,24 +34,31 @@ export const Home = () => {
             <p>$20,024.89</p>
           </div>
         </Card>
-        <Stack direction="column" spacing={20}>
+        <Stack direction="column" spacing={10}>
           <Stack>
             <Card className="home__navigational-item">
               <PurpleButton>NEW</PurpleButton>
               ScotiaWealth
+              <IconButton
+                className="scotia-wealth-banner"
+                iconUrl={ScotiaWealthBanner}
+              />
+              <IconButton iconUrl={rightChevronIcon} variant="tiny" />
             </Card>
           </Stack>
           <Stack>
             <Card className="home__navigational-item">
-              <IconButton iconUrl={creditCardIcon} variant="small" />
+              <IconButton iconUrl={creditCardIcon} variant="xsmall" />
               Add new products
+              <IconButton iconUrl={rightChevronIcon} variant="tiny" />
             </Card>
           </Stack>
           <Stack>
             <Card className="home__navigational-item">
-              <IconButton iconUrl={tagIcon} variant="small"/>
+              <IconButton iconUrl={tagIcon} variant="xsmall" />
               Programs and offers(1)
-              </Card>
+              <IconButton iconUrl={rightChevronIcon} variant="tiny" />
+            </Card>
           </Stack>
         </Stack>
       </div>
