@@ -76,3 +76,9 @@ p.sm {
 .background--light {
   background-color: $background-color--light;
 }
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
