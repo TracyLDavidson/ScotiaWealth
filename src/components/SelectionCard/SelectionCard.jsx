@@ -14,8 +14,9 @@ const SelectionCard = () => {
               alt="chat icon"
               className="selectionCard__chat"
             />
+            <div className="selectionCard__notifications">4</div>
           </div>
-          <p className="selectionCard__text">Chat</p>
+          <p className="selectionCard__text selectionCard__text--move">Chat</p>
         </div>
       </Link>
       <div className="selectionCard__container">

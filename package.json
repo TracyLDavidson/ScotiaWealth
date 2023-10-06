@@ -19,7 +19,8 @@
     "rsuite": "^5.40.0",
     "sass": "^1.69.0",
     "sass-reset": "^1.0.4",
-    "scss-reset": "^1.4.2"
+    "scss-reset": "^1.4.2",
+    "vite-plugin-svgr": "^4.1.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

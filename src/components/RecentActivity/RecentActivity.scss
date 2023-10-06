@@ -1,0 +1,20 @@
+.recentActivity {
+  margin: 40px 19px 0px;
+  &__title {
+    color: #6d6d6d;
+    font-family: Urbanist;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.24px;
+    margin-bottom: 14px;
+  }
+  &__button {
+    background-image: url("../../assets/images/icons/scroll-down-icon.svg");
+    background-size: cover;
+    background-position: center;
+    width: 33px;
+    height: 33px;
+    margin: auto;
+    margin-bottom: 36px;
+  }
+}
