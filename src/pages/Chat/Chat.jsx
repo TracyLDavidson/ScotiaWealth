@@ -1,10 +1,11 @@
-import { Header } from "../../components/Header/Header";
+import { HeaderShort } from "../../components/HeaderShort/HeaderShort";
 import keyboardUpIcon from "../../assets/images/icons/keyboard-up.svg";
 import "./Chat.scss";
 
 const Chat = () => {
   return (
     <>
+      <HeaderShort />
       <section className="chat">
         <div className="chat__bubble chat__bubble--client">
           <p className="chat__message">
@@ -29,11 +30,13 @@ const Chat = () => {
             account registration on your app.
           </p>
         </div>
-        <p className="chat__thread-closed">
+      </section>
+      <article className="thread">
+        <p className="thread__closed">
           Your advisor has closed this task out. Please return to your chat
           inbox.
         </p>
-      </section>
+      </article>
       <section className="message-panel">
         <div className="message-panel__field-wrapper">
           <input
