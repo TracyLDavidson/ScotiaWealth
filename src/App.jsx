@@ -6,6 +6,7 @@ import "./styles/partials/_global.scss";
 import "rsuite/styles/index.less";
 import "./styles/rsuite-custom-theme.less";
 import { Header } from "./components/Header/Header";
+import { Chat } from "./pages/Chat/Chat";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Navigate to="/home" />} />
         <Route path="/home" element={<Home />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/chat" element={<Chat />} />
       </Routes>
     </BrowserRouter>
   );
