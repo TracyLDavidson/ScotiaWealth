@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Button, Stack } from "rsuite";
 import { Card } from "../../components/Card/Card";
 import { AccountInfoItem } from "../../components/AccountInfoItem/AccountInfoItem";
@@ -14,14 +15,28 @@ import rightChevronIcon from "../../assets/images/icons/right-chevron.svg";
 import tagIcon from "../../assets/images/icons/tag.png";
 
 export const Home = () => {
+  const [selectedAccount, setSelectedAccount] = useState("");
+  const navigate = useNavigate();
   return (
     <>
       <Header />
       <div className="home">
         <Card className="home__card">
           <div className="home__button-group">
-            <ButtonUnderlined text="My account" />
-            <ButtonUnderlined text="My updates" variant="highlight" />
+            <ButtonUnderlined
+              text="My account"
+              variant={
+                selectedAccount === "account" || selectedAccount === ""
+                  ? "highlight"
+                  : ""
+              }
+              onClick={() => setSelectedAccount("account")}
+            />
+            <ButtonUnderlined
+              text="My updates"
+              variant={selectedAccount === "update" ? "highlight" : ""}
+              onClick={() => setSelectedAccount("update")}
+            />
           </div>
           <AccountInfoItem variant="highlight" text="Banking (2)" />
           <AccountInfoItem variant="default" text="Preferred Package (1234)" />
@@ -36,7 +51,10 @@ export const Home = () => {
         </Card>
         <Stack direction="column" spacing={10}>
           <Stack>
-            <Card className="home__navigational-item">
+            <Card
+              className="home__navigational-item"
+              onClick={() => navigate("/scotiawealth")}
+            >
               <PurpleButton>NEW</PurpleButton>
               ScotiaWealth
               <IconButton
