@@ -9,7 +9,7 @@ const Navigation = () => {
   return (
     <nav className="nav">
       <div className="nav__link">
-        <div className="nav__icon-wrapper">
+        <div className="nav__icon-wrapper-home">
           <img className="nav__icon" src={homeIcon} alt="Home" />
         </div>
         <p className="nav__title">Home</p>
@@ -21,7 +21,7 @@ const Navigation = () => {
         <p className="nav__title">Move Money</p>
       </div>
       <div className="nav__link">
-        <div className="nav__icon-wrapper">
+        <div className="nav__icon-wrapper-advice">
           <img className="nav__icon" src={adviceIcon} alt="Advice" />
         </div>
         <p className="nav__title">Advice&trade;</p>
@@ -33,7 +33,7 @@ const Navigation = () => {
         <p className="nav__title">Scene+</p>
       </div>
       <div className="nav__link">
-        <div className="nav__icon-wrapper">
+        <div className="nav__icon-wrapper-more">
           <img className="nav__icon" src={hamburger} alt="More" />
         </div>
         <p className="nav__title">More</p>

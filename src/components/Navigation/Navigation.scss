@@ -8,16 +8,39 @@
   padding: 0.5rem 2rem;
   border-top: solid 0.1px gray;
 
-  &__icon-wrapper {
-    width: 3.8rem;
-    height: 3.8rem;
-  }
-
   &__link {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  &__icon-wrapper {
+    width: 3.2rem;
+    height: 3.2rem;
+    margin-bottom: 0.8rem;
+    margin-top: auto;
+
+    &-home {
+      width: 3.8rem;
+      height: 3.8rem;
+      margin-bottom: 0.5rem;
+      margin-top: auto;
+    }
+
+    &-advice {
+      width: 4rem;
+      height: 4rem;
+      margin-bottom: 0.5rem;
+      margin-top: auto;
+    }
+
+    &-more {
+      width: 2.8rem;
+      height: 2.8rem;
+      margin-bottom: 1rem;
+      margin-top: auto;
+    }
   }
 
   &__icon {
