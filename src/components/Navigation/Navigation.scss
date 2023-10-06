@@ -3,16 +3,26 @@
   bottom: 0;
   display: flex;
   justify-content: space-between;
-  background-color: white;
+  background-color: #fff;
   width: 100%;
   padding: 0.5rem 2rem;
-  border-top: solid 0.1px gray;
+  border-top: solid 0.1px #e2e2e2;
 
   &__link {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+  }
+
+  &__link-bar {
+    background: url("../../assets/images/icons/navigation-top-bar.svg")
+      no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 1rem;
   }
 
   &__icon-wrapper {
@@ -53,5 +63,9 @@
   &__title {
     font-size: 1.2rem;
     color: gray;
+
+    &--active {
+      color: #d81e05;
+    }
   }
 }
