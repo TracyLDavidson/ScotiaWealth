@@ -4,37 +4,44 @@ import { Card } from "../../components/Card/Card";
 import { ButtonUnderlined } from "../../components/Buttons/ButtonUnderlined/ButtonUnderlined";
 import { AccountInfoItem } from "../../components/AccountInfoItem/AccountInfoItem";
 import "./Home.scss";
+import { Header } from "../../components/Header/Header";
+import { PurpleButton } from "../../components/Buttons/PurpleButton/PurpleButton";
 
 export const Home = () => {
   return (
-    <div className="home">
-      <Card className="home__card">
-        <div className="home__button-group">
-          <ButtonUnderlined text="My account" />
-          <ButtonUnderlined text="My updates" variant="highlight" />
-        </div>
-        <AccountInfoItem variant="highlight" text="Banking (2)" />
-        <AccountInfoItem variant="default" text="Preferred Package (1234)" />
-        <AccountInfoItem
-          variant="default"
-          text="Momentum PLUS Savings (4321)"
-        />
-        <div className="card_footer">
-          <p>Total</p>
-          <p>$20,024.89</p>
-        </div>
-      </Card>
-      <Stack direction="column" spacing={20}>
-        <Stack>
-          <Card>Text</Card>
+    <>
+      <Header />
+      <div className="home">
+        <Card className="home__card">
+          <div className="home__button-group">
+            <ButtonUnderlined text="My account" />
+            <ButtonUnderlined text="My updates" variant="highlight" />
+          </div>
+          <AccountInfoItem variant="highlight" text="Banking (2)" />
+          <AccountInfoItem variant="default" text="Preferred Package (1234)" />
+          <AccountInfoItem
+            variant="default"
+            text="Momentum PLUS Savings (4321)"
+          />
+          <div className="card_footer">
+            <p>Total</p>
+            <p>$20,024.89</p>
+          </div>
+        </Card>
+        <Stack direction="column" spacing={20}>
+          <Stack>
+            <Card className="navigational-item">
+              <PurpleButton>NEW</PurpleButton>
+            </Card>
+          </Stack>
+          <Stack>
+            <Card>Add new products</Card>
+          </Stack>
+          <Stack>
+            <Card>Programs and offers(1)</Card>
+          </Stack>
         </Stack>
-        <Stack>
-          <Card>Text</Card>
-        </Stack>
-        <Stack>
-          <Card>Text</Card>
-        </Stack>
-      </Stack>
-    </div>
+      </div>
+    </>
   );
 };

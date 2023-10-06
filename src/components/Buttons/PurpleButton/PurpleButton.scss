@@ -1,0 +1,8 @@
+@import "../../../styles/partials/variables";
+
+.purple-button {
+  .rs-btn {
+    background-color: $primary-color--tertiary;
+    color: $primary-color--light;
+  }
+}
