@@ -7,18 +7,18 @@ const Header = ({ text = "Home" }) => {
     <header className="header">
       <nav className="header__nav">
         <NavLink to={"/"} className="header__nav-logo-wrapper">
-          {text === "home" && (
+          {text === "Home" && (
             <img src={logoMini} alt="logo" className="header__nav-logo" />
           )}
 
-          {text !== "home" && (
+          {text !== "Home" && (
             <div className="headerScotiaWealth__nav-back"></div>
           )}
         </NavLink>
         <h1 className="header__nav-title">{text}</h1>
         <button className="header__nav-search"></button>
       </nav>
-      {text === "home" && (
+      {text === "Home" && (
         <h2 className="header__greeting">Good afternoon, Daniel</h2>
       )}
     </header>
