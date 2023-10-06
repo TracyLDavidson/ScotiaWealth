@@ -1,4 +1,4 @@
-import { OptionBars } from "../OprionBars/OptionBars";
+import { OptionBars } from "../OptionBars/OptionBars";
 import "./RecentActivity.scss";
 
 const RecentActivity = () => {
