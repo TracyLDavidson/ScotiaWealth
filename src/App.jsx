@@ -8,20 +8,20 @@ import "./styles/rsuite-custom-theme.less";
 import { Chat } from "./pages/Chat/Chat";
 import { ScotiaWealth } from "./pages/ScotiaWealth/ScotiaWealth";
 import { AdvisorPage } from "./pages/AdvisorPage/AdvisorPage";
+import { Navigation } from "./components/Navigation/Navigation";
 
 function App() {
   return (
     <BrowserRouter>
-    <Navigation>
       <Routes>
         <Route path="/" element={<Navigate to="/home" />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/chat" element={<Chat />} />
         <Route path="/changeddashboard" element={<ChangedDashboard />} />
         <Route path="/scotiawealth" element={<ScotiaWealth />} />
         <Route path="/advisor" element={<AdvisorPage />} />
       </Routes>
+      <Navigation />
     </BrowserRouter>
   );
 }
