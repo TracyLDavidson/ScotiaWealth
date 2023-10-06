@@ -6,6 +6,7 @@ import "./styles/partials/_global.scss";
 import "rsuite/styles/index.less";
 import "./styles/rsuite-custom-theme.less";
 import { Header } from "./components/Header/Header";
+import { Navigation } from "./components/Navigation/Navigation";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
+      <Navigation />
     </BrowserRouter>
   );
 }
