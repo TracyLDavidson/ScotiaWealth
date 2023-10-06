@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { HeaderScotiaWealth } from "./components/HeaderScotiaWealth/HeaderScotiaWealth";
 import { Home } from "./pages/Home/Home";
 import { Dashboard } from "./pages/Dashboard/Dashboard";
 import "./styles/partials/_global.scss";
