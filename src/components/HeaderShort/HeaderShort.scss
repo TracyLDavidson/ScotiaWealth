@@ -10,7 +10,6 @@
 
   &__nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 
     &-back {
@@ -35,15 +34,7 @@
       font-style: normal;
       font-weight: 700;
       letter-spacing: -0.24px;
-    }
-
-    &-search {
-      background-image: url("../../assets/images/icons/search.svg");
-      background-size: cover;
-      background-position: center;
-      width: 20.001px;
-      height: 20px;
-      margin-left: 2rem;
+      margin-left: 11rem;
     }
   }
 

@@ -9,7 +9,6 @@ const HeaderShort = () => {
           <div className="header-short__nav-back"></div>
         </NavLink>
         <h1 className="header-short__nav-title">Chat</h1>
-        <button className="header-short__nav-search"></button>
       </nav>
     </header>
   );
