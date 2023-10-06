@@ -5,12 +5,10 @@ import { Dashboard } from "./pages/Dashboard/Dashboard";
 import "./styles/partials/_global.scss";
 import "rsuite/styles/index.less";
 import "./styles/rsuite-custom-theme.less";
-import { Header } from "./components/Header/Header";
 
 function App() {
   return (
     <BrowserRouter>
-      <Header />
       <Routes>
         <Route path="/" element={<Navigate to="/home" />} />
         <Route path="/home" element={<Home />} />

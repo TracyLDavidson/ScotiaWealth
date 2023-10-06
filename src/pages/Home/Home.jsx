@@ -4,9 +4,12 @@ import { Card } from "../../components/Card/Card";
 import { ButtonUnderlined } from "../../components/Buttons/ButtonUnderlined/ButtonUnderlined";
 import { AccountInfoItem } from "../../components/AccountInfoItem/AccountInfoItem";
 import "./Home.scss";
+import { Header } from "../../components/Header/Header";
 
 export const Home = () => {
   return (
+    <>
+    <Header/>
     <div className="home">
       <Card className="home__card">
         <div className="home__button-group">
@@ -36,5 +39,6 @@ export const Home = () => {
         </Stack>
       </Stack>
     </div>
+    </>
   );
 };
