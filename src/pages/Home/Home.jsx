@@ -1,11 +1,17 @@
 import React from "react";
 import { Button, Stack } from "rsuite";
 import { Card } from "../../components/Card/Card";
-import { ButtonUnderlined } from "../../components/Buttons/ButtonUnderlined/ButtonUnderlined";
 import { AccountInfoItem } from "../../components/AccountInfoItem/AccountInfoItem";
 import "./Home.scss";
 import { Header } from "../../components/Header/Header";
+import { ButtonUnderlined } from "../../components/Buttons/ButtonUnderlined/ButtonUnderlined";
 import { PurpleButton } from "../../components/Buttons/PurpleButton/PurpleButton";
+import { IconButton } from "../../components/Buttons/IconButton/IconButton";
+import creditCardIcon from "../../assets/images/icons/credit-card.png";
+import ScotiaWealthBanner from "../../assets/images/logo/scotia-wealth-banner.png";
+import rightChevronIcon from "../../assets/images/icons/right-chevron.svg";
+
+import tagIcon from "../../assets/images/icons/tag.png";
 
 export const Home = () => {
   return (
@@ -28,17 +34,31 @@ export const Home = () => {
             <p>$20,024.89</p>
           </div>
         </Card>
-        <Stack direction="column" spacing={20}>
+        <Stack direction="column" spacing={10}>
           <Stack>
-            <Card className="navigational-item">
+            <Card className="home__navigational-item">
               <PurpleButton>NEW</PurpleButton>
+              ScotiaWealth
+              <IconButton
+                className="scotia-wealth-banner"
+                iconUrl={ScotiaWealthBanner}
+              />
+              <IconButton iconUrl={rightChevronIcon} variant="tiny" />
             </Card>
           </Stack>
           <Stack>
-            <Card>Add new products</Card>
+            <Card className="home__navigational-item">
+              <IconButton iconUrl={creditCardIcon} variant="xsmall" />
+              Add new products
+              <IconButton iconUrl={rightChevronIcon} variant="tiny" />
+            </Card>
           </Stack>
           <Stack>
-            <Card>Programs and offers(1)</Card>
+            <Card className="home__navigational-item">
+              <IconButton iconUrl={tagIcon} variant="xsmall" />
+              Programs and offers(1)
+              <IconButton iconUrl={rightChevronIcon} variant="tiny" />
+            </Card>
           </Stack>
         </Stack>
       </div>
