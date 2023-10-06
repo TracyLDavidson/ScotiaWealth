@@ -1,7 +1,6 @@
 @import "../../styles/partials/mixins";
 
 .home {
-  margin-top: 50px;
   @include container;
 
   .button-underlined {
