@@ -56,7 +56,7 @@ export const Home = () => {
               onClick={() => navigate("/scotiawealth")}
             >
               <PurpleButton>NEW</PurpleButton>
-              ScotiaWealth
+              <p>ScotiaWealth</p>
               <IconButton
                 className="scotia-wealth-banner"
                 iconUrl={ScotiaWealthBanner}
@@ -67,14 +67,14 @@ export const Home = () => {
           <Stack>
             <Card className="home__navigational-item">
               <IconButton iconUrl={creditCardIcon} variant="xsmall" />
-              Add new products
+              <p>Add new products</p>
               <IconButton iconUrl={rightChevronIcon} variant="tiny" />
             </Card>
           </Stack>
           <Stack>
             <Card className="home__navigational-item">
               <IconButton iconUrl={tagIcon} variant="xsmall" />
-              Programs and offers(1)
+              <p>Programs and offers(1)</p>
               <IconButton iconUrl={rightChevronIcon} variant="tiny" />
             </Card>
           </Stack>
