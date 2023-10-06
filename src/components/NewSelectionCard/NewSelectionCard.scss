@@ -1,0 +1,70 @@
+@use "../../styles/partials/variables" as *;
+
+.newSelectionCard {
+  display: flex;
+  width: 350px;
+  height: 128px;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -78px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(137, 137, 137, 0.25);
+  padding-bottom: 30px;
+  &__link {
+    width: 50px;
+    height: 50px;
+  }
+  &__container {
+    width: 50px;
+    height: 50px;
+    border: 1px solid $background-color--highlight-1;
+    border-radius: 50%;
+    position: relative;
+  }
+  &__chat,
+  &__calendar,
+  &__portfolio {
+    width: 45.833px;
+    height: 37.5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__text {
+    color: #000;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: -0.24px;
+    margin-top: 60px;
+
+    &--move{
+      margin-top: 32px;
+    }
+  }
+  &__notifications {
+    color: #fff;
+    text-align: center;
+    font-family: Urbanist;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21px; /* 87.5% */
+    letter-spacing: -0.32px;
+
+    padding: 3px 2px 0px 0px;
+    width: 28px;
+    height: 28px;
+    background-color: #0968ee;
+    color: $background-color--white;
+    border-radius: 50%;
+    position: relative;
+    left: 60%;
+    transform: translate(-0%, -50%);
+  }
+}
