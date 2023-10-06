@@ -6,6 +6,7 @@ import "./styles/partials/_global.scss";
 import "rsuite/styles/index.less";
 import "./styles/rsuite-custom-theme.less";
 import { Chat } from "./pages/Chat/Chat";
+import { ChatOptions } from "./pages/ChatOptions/ChatOptions";
 import { ScotiaWealth } from "./pages/ScotiaWealth/ScotiaWealth";
 import { AdvisorPage } from "./pages/AdvisorPage/AdvisorPage";
 import { Navigation } from "./components/Navigation/Navigation";
@@ -20,6 +21,7 @@ function App() {
         <Route path="/changeddashboard" element={<ChangedDashboard />} />
         <Route path="/scotiawealth" element={<ScotiaWealth />} />
         <Route path="/advisor" element={<AdvisorPage />} />
+        <Route path="/chat-options" element={<ChatOptions />} />
       </Routes>
       <Navigation />
     </BrowserRouter>
