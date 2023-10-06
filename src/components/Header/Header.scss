@@ -1,0 +1,49 @@
+@use "../../styles/partials/variables" as *;
+
+.header {
+  background-color: $primary-color--dark;
+  height: 247px;
+  width: 100%;
+  padding: 0px 19px 0px;
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-logo {
+      display: flex;
+      width: 40px;
+      height: 43px;
+      &-wrapper {
+        width: 40px;
+        cursor: pointer;
+      }
+    }
+    &-title {
+      color: $background-color--white;
+      text-align: center;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      letter-spacing: -0.24px;
+    }
+    &-search {
+      background-image: url("../../assets/images/icons/search.svg");
+      background-size: cover;
+      background-position: center;
+      width: 20.001px;
+      height: 20px;
+      flex-shrink: 0;
+    }
+  }
+
+  &__greeting {
+    color: $background-color--white;
+    color: #fff;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.24px;
+    margin-top: 48px;
+  }
+}
