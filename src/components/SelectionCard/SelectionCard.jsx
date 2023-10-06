@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const SelectionCard = () => {
   return (
     <div className="selectionCard">
-      <Link to={"/chat"} className="selectionCard__link">
+      <Link to={"/chat-options"} className="selectionCard__link">
         <div className="selectionCard__container">
           <div className="selectionCard__wrapper">
             <img
