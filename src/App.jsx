@@ -6,6 +6,7 @@ import "./styles/partials/_global.scss";
 import "rsuite/styles/index.less";
 import "./styles/rsuite-custom-theme.less";
 import { ScotiaWealth } from "./pages/ScotiaWealth/ScotiaWealth";
+import { Navigation } from "./components/Navigation/Navigation";
 
 function App() {
   return (
@@ -14,8 +15,9 @@ function App() {
         <Route path="/" element={<Navigate to="/home" />} />
         <Route path="/home" element={<Home />} />
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/scotiawealth" element={<ScotiaWealth />}/>
+        <Route path="/scotiawealth" element={<ScotiaWealth />} />
       </Routes>
+      <Navigation />
     </BrowserRouter>
   );
 }
