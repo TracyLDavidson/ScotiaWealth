@@ -1,11 +1,14 @@
 import React from "react";
 import { Button, Stack } from "rsuite";
 import { Card } from "../../components/Card/Card";
-import { ButtonUnderlined } from "../../components/Buttons/ButtonUnderlined/ButtonUnderlined";
 import { AccountInfoItem } from "../../components/AccountInfoItem/AccountInfoItem";
 import "./Home.scss";
 import { Header } from "../../components/Header/Header";
+import { ButtonUnderlined } from "../../components/Buttons/ButtonUnderlined/ButtonUnderlined";
 import { PurpleButton } from "../../components/Buttons/PurpleButton/PurpleButton";
+import { IconButton } from "../../components/Buttons/IconButton/IconButton";
+import creditCardIcon from "../../assets/images/icons/credit-card.png";
+import tagIcon from "../../assets/images/icons/tag.png";
 
 export const Home = () => {
   return (
@@ -30,15 +33,22 @@ export const Home = () => {
         </Card>
         <Stack direction="column" spacing={20}>
           <Stack>
-            <Card className="navigational-item">
+            <Card className="home__navigational-item">
               <PurpleButton>NEW</PurpleButton>
+              ScotiaWealth
             </Card>
           </Stack>
           <Stack>
-            <Card>Add new products</Card>
+            <Card className="home__navigational-item">
+              <IconButton iconUrl={creditCardIcon} variant="small" />
+              Add new products
+            </Card>
           </Stack>
           <Stack>
-            <Card>Programs and offers(1)</Card>
+            <Card className="home__navigational-item">
+              <IconButton iconUrl={tagIcon} variant="small"/>
+              Programs and offers(1)
+              </Card>
           </Stack>
         </Stack>
       </div>
